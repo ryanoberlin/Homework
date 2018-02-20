@@ -1,0 +1,5 @@
+1. A variable is a known location in memory. 
+
+2. A method is a named location in memory that references a behavior.
+
+3. Optional Parameters lab for class next monday
