@@ -7,11 +7,22 @@
         mc:Ignorable="d"
         Title="Big Time Math" Height="350" Width="525">
     <Grid>
-        <RadioButton x:Name="Circle" Content="Circle" HorizontalAlignment="Left" Margin="52,37,0,0" VerticalAlignment="Top" Checked="circlearea"/>
-        <Button x:Name="Choice" Content="Button" HorizontalAlignment="Left" Margin="231,238,0,0" VerticalAlignment="Top" Width="75" Click="next"/>
-        <RadioButton x:Name="hemisphere" Content="Hemisphere" HorizontalAlignment="Left" Margin="52,57,0,0" VerticalAlignment="Top" Checked="hemivol"/>
-        <RadioButton x:Name="triangle" Content="Heron's Formula" HorizontalAlignment="Left" Margin="52,77,0,0" VerticalAlignment="Top" Checked="heron"/>
-        <RadioButton x:Name="quadratic" Content="Quadratic Equation" HorizontalAlignment="Left" Margin="52,97,0,0" VerticalAlignment="Top" Checked="quad"/>
-        <Button Content="Quit" HorizontalAlignment="Left" Margin="421,288,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Grid.Background>
+            <SolidColorBrush Color="#FF646464"/>
+        </Grid.Background>
+        <RadioButton x:Name="Circle" Content="Circle" HorizontalAlignment="Left" Margin="52,37,0,0" VerticalAlignment="Top" Checked="circlearea" Background="White" Foreground="#FF1C32E2"/>
+        <Button x:Name="Choice" Content="Select" HorizontalAlignment="Left" Margin="231,238,0,0" VerticalAlignment="Top" Width="75" Click="next">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <RadioButton x:Name="hemisphere" Content="Hemisphere" HorizontalAlignment="Left" Margin="52,57,0,0" VerticalAlignment="Top" Checked="hemivol" Background="White" Foreground="Yellow"/>
+        <RadioButton x:Name="triangle" Content="Heron's Formula" HorizontalAlignment="Left" Margin="52,77,0,0" VerticalAlignment="Top" Checked="heron" Background="White" Foreground="#FFAFC76F"/>
+        <RadioButton x:Name="quadratic" Content="Quadratic Equation" HorizontalAlignment="Left" Margin="52,97,0,0" VerticalAlignment="Top" Checked="quad" Background="White" Foreground="#FFDB0B0B"/>
+        <Button Content="Quit" HorizontalAlignment="Left" Margin="421,288,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

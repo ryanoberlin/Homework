@@ -14,7 +14,8 @@
         <Button Content="Exit" HorizontalAlignment="Left" Margin="201,239,0,0" VerticalAlignment="Top" Width="75" Click="quit"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="14,239,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,113,0,0" TextWrapping="Wrap" Text="Circumference= " VerticalAlignment="Top"/>
-        <TextBox x:Name="circumference" HorizontalAlignment="Left" Height="23" Margin="103,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="circumference" HorizontalAlignment="Left" Margin="111,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top"
+/>
 
     </Grid>
 </Window>

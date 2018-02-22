@@ -1,0 +1,15 @@
+Create a second SQL table similar to the my family table. Use something that you are familiar with i.e. cars, music, 
+astronical bodies 
+
+Deliverables for Next Week:
+
+Hard Deadlines
+- Project Markdown Document
+- C# Exercise (math program)
+- SQL Exercise (turn in script)
+- C# chapter three 
+ 
+Soft Deadlines 
+- C# Ch 4
+- SQL 2b
+- SQL 3

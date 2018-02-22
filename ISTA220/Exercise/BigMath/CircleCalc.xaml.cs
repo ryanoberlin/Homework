@@ -36,8 +36,15 @@ namespace BigMath
 
         private void doCirc(object sender, RoutedEventArgs e)
         {
-            circlearea();
-            circlecircumference();
+            try
+            {
+                circlearea();
+                circlecircumference();
+            }
+            catch(FormatException)
+            {
+                MessageBox.Show("Input only Integers.");
+            }
         }
 
         private void quit(object sender, RoutedEventArgs e)

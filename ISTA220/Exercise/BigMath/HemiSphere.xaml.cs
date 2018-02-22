@@ -25,11 +25,19 @@ namespace BigMath
         }
         private void hemivolume()
         {
-            double r = double.Parse(radius.Text);
-            HemVol.Text = ((2f / 3f * Math.PI) * (r * r * r)).ToString();
-            SphereVol.Text = (4 * Math.PI * Math.Pow(r, 3) / 3).ToString();
-
+            try
+            {
+                double r = double.Parse(radius.Text);
+                HemVol.Text = ((2f / 3f * Math.PI) * (r * r * r)).ToString();
+                SphereVol.Text = (4 * Math.PI * Math.Pow(r, 3) / 3).ToString();
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Input only integers.");
+            }
         }
+
+    
     
         private void back(object sender, RoutedEventArgs e)
         {
