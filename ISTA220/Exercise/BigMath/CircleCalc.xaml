@@ -1,0 +1,20 @@
+﻿<Window x:Class="BigMath.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BigMath"
+        mc:Ignorable="d"
+        Title="Fun with Circles" Height="300" Width="300">
+    <Grid>
+        <TextBox x:Name="radius" HorizontalAlignment="Left" Height="23" Margin="82,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="circresultarea" HorizontalAlignment="Left" Margin="54,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" Text="Area = " VerticalAlignment="Top"/>
+        <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Left" Margin="111,202,0,0" VerticalAlignment="Top" Width="75" Click="doCirc"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="201,239,0,0" VerticalAlignment="Top" Width="75" Click="quit"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="14,239,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,113,0,0" TextWrapping="Wrap" Text="Circumference= " VerticalAlignment="Top"/>
+        <TextBox x:Name="circumference" HorizontalAlignment="Left" Height="23" Margin="103,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
