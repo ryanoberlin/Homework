@@ -1,21 +1,21 @@
-#1.) The regions are: Eastern, Western, Norther, Southern
+# 1.) The regions are: Eastern, Western, Norther, Southern
 
-##Commands used:
+## Commands used:
 *.tables
 select * from region;
 select regiondescription from region;*
 
-#2.) The Cities:
+# 2.) The Cities:
 Westboro Bedford Georgetow Boston Cambridge Braintree Providence Hollis Portsmouth Wilton Morristown Edison NewYork NewYork Mellvile 
 Fairport Philadelphia Neward Rockville Greensboro Cary Columbia Atlanta Savannah Orlando Tampa Louisville Beachwood Findlay Southfield 
 Troy BloomfieldHills Racine Roseville Minneapolis HoffmanEstates Chicago Bentonville Dallas Austin Denver ColoradoSprings Phoenix Scottsdale 
 SantaMonica MenloPark SanFrancisco Campbell SantaClara SantaCruz Bellevue Redmond Seattle
 
-##Commands used:
+## Commands used:
 *.schema territories 
 select TerritoryDescription from territories;*
 
-#3.)Southern Region Cities are
+# 3.)Southern Region Cities are
 
 Atlanta
 Austin
@@ -26,18 +26,18 @@ Orlando
 Savannah
 Tampa
 
-##Commands used:
+## Commands used:
 *select territorydescription, regionid from territories where regionid = 4 order by territorydescription;*
 
-#4.)
+# 4.)
 The following command will query with the fully qualified column name:
 *select territories.territorydescription from territories where territories.regionid = 4;*
 
-#5.)
+# 5.)
 *To create an alias for the previous command you would input it as follows:
 select t.territorydescription from territories as t where t.regionid = 4;*
 
-#6.) The contact name and phone number for each customer is:
+# 6.) The contact name and phone number for each customer is:
 Name | Number | City |
 |:----|:----:|----:|
 Sven Ottlieb|0241-039123|Aachen
@@ -133,11 +133,11 @@ John Steel|(509) 555-7969|Walla Walla
 Zbyszek Piestrzeniewicz|(26) 642-7012|Warszawa
 Palle Ibsen|86 21 32 43|Århus
 
-##Commands used:
+## Commands used:
 ~.schema customers;
 ~select ContactName, Phone, City from customers order by City;
 
-#7.) Products out of stock
+# 7.) Products out of stock
 On Hand | Name|
 ----|-----|
 0|Chef Anton's Gumbo Mix
@@ -146,11 +146,11 @@ On Hand | Name|
 0|Gorgonzola Telino
 0|Perth Pasties
 
-##Commands used:
+## Commands used:
 *.schema products
 select UnitsInStock, ProductName from products where UnitsInStock = 0;*
 
-#The products with the least amount on hand are:
+# The products with the least amount on hand are:
 On hand | Name |
 -------|-----|
 3|Sir Rodney's Scones
@@ -164,10 +164,10 @@ On hand | Name |
 10|Maxilaku
 11|Gravad lax
 
-##Commands Used:
+## Commands Used:
 *select UnitsInStock, ProductName from products where UnitsInStock order by UnitsInStock asc limit 10;*
 
-#9.)The five most Expensive products:
+# 9.)The five most Expensive products:
 |price|Item|
 ------|----|
 263.5|Côte de Blaye
@@ -176,17 +176,17 @@ On hand | Name |
 81.0|Sir Rodney's Marmalade
 62.5|Carnarvon Tigers
 
-##Commands used:
+## Commands used:
 *select UnitPrice, ProductName from products order by UnitPrice desc limit 5;*
 
-#10.)Total prducts, customers, and suppliers is:
+# 10.)Total prducts, customers, and suppliers is:
 Count|Group|
 ----|-----|
 77 Products
 92 Customers
 29 Supliers
 
-##Commands used:
+## Commands used:
 *select COUNT(*) from products;
 select COUNT(*) from customers;
 select COUNT(*) from suppliers;*
