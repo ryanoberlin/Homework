@@ -10,9 +10,17 @@
         <Grid.Background>
             <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowFrameColorKey}}"/>
         </Grid.Background>
-        <Button Content="Calculate" HorizontalAlignment="Left" Margin="106,197,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Margin="106,197,0,0" VerticalAlignment="Top" Width="75" Click="heronsformula"/>
         <Button Content="Back" HorizontalAlignment="Left" Margin="10,237,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="207,237,0,0" VerticalAlignment="Top" Width="75" Click="exit"/>
+        <TextBox x:Name="sidea" HorizontalAlignment="Left" Height="23" Margin="149,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="sideb" HorizontalAlignment="Left" Height="23" Margin="149,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="sidec" HorizontalAlignment="Left" Height="23" Margin="149,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,27,0,0" TextWrapping="Wrap" Text="Length of Side A" VerticalAlignment="Top" RenderTransformOrigin="0.242,-1.562"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,66,0,0" TextWrapping="Wrap" Text="Length of Side B" VerticalAlignment="Top" RenderTransformOrigin="0.242,-1.562"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,107,0,0" TextWrapping="Wrap" Text="Length of Side C" VerticalAlignment="Top" RenderTransformOrigin="0.242,-1.562"/>
+        <TextBox x:Name="answer" HorizontalAlignment="Left" Height="23" Margin="149,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="106,152,0,0" TextWrapping="Wrap" Text="Area" VerticalAlignment="Top" RenderTransformOrigin="0.242,-1.562"/>
 
     </Grid>
 </Window>

@@ -35,5 +35,23 @@ namespace BigMath
             main.Show();
             this.Close();
         }
+
+        private void heronsformula(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                double a = double.Parse(sidea.Text);
+                double b = double.Parse(sideb.Text);
+                double c = double.Parse(sidec.Text);
+                double allsides = (a + b + c) / 2;
+                double area = Math.Sqrt(allsides * (allsides - a) * (allsides - b) * (allsides - c));
+
+                answer.Text = area.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Input only Integers.");
+            }
+        }
     }
 }
