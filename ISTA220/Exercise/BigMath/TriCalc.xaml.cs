@@ -64,7 +64,7 @@ namespace BigMath
                 }
             }
 
-            catch
+            catch(FormatException)
             {
                 MessageBox.Show("Input only Integers.");
             }

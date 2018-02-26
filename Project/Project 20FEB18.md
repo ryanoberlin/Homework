@@ -12,3 +12,8 @@ Program must use multiple models to simulate different potential interactions ou
 Utilize Microsoft's CNTK and historical trial data to generate a machine learning algorithm that predicts jury verdicts. 
 Incorporate the ability to select multiple models, Bayesian, Genetic, and Machine learned algorithms. 
 
+## Financial Transaction settlement system built on Azure framework for internet storefronts
+Purpose: decrease time from customer order to shipment preperation.
+Develop an ethereum based financial transaction system that allows small businesses to quickly and securely settle transaction on 
+blockchain. Blockchain confirmation is delivered in multiple locations. 
+

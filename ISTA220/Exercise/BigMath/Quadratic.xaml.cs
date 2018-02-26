@@ -44,7 +44,7 @@ namespace BigMath
                 double c = double.Parse(cbox.Text);
 
                 double squareroot = b * b - 4 * a * c;
-                double x, x1, x2, img;
+                double x, x1, x2;
 
                 if (squareroot > 0)
                 {

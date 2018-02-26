@@ -23,6 +23,7 @@ namespace BigMath
         public MainWindow()
         {
             InitializeComponent();
+              
         }
 
         private void circlearea(object sender, RoutedEventArgs e)
