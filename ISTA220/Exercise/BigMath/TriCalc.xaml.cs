@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+
 
 namespace BigMath
 {
@@ -46,8 +48,22 @@ namespace BigMath
                 double allsides = (a + b + c) / 2;
                 double area = Math.Sqrt(allsides * (allsides - a) * (allsides - b) * (allsides - c));
 
-                answer.Text = area.ToString();
+                if (area <= 0)
+                {
+                    MessageBox.Show("Your triangle does not exist");
+                    answer.Text = "Not a Triangle";
+                }
+                else if (double.IsNaN(0 / area))
+                {
+                    MessageBox.Show("Your triangle is imaginary");
+                    answer.Text = "Imaginary Number";
+                }
+                else
+                {
+                    answer.Text = area.ToString();
+                }
             }
+
             catch
             {
                 MessageBox.Show("Input only Integers.");
