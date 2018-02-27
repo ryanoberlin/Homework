@@ -6,12 +6,12 @@
  
 4. SELECT Name FROM colleges WHERE Name = 'Institute' 
 
-5. 
+5. SELECT CHAIRINDEX(' ', 'Barack Hussein Obama');
 
-6.
+6.  SELECT name, LEFT(name,CHAIRINDEX(' ',name + ' ')-1 as FIRST from presidents
 
-7.
+7. SELCT * FROM event where DATEDIFF(day,-30,getdate())
 
-8.
+8. select birthday FROM children where DATEDIFF(day,now,birthday);
 
-9.
+9. GETDATE(), SYSDATETIME()
