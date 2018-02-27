@@ -11,6 +11,7 @@
 6. No, the column facName and facCreds are not atomic and contain more than one value which can be subdivided. One solution would be to create additional 
 columns for first and last names, as well as additonal columns for credentials.
 
+```sql
 create table faculty (
 	facID int primary key,
 	facName text,
@@ -18,10 +19,11 @@ create table faculty (
 	facCreds1 text,
 	facCreds2 text
 	facCreds3 text); 
-
+```
 7. No, because the example contains a candidate keys that depend on the primary key. One solution would be to create two tables, one for Owner ID and one for petID and relate them
 using a foreign key.
 
+```sql
 create table owners (
 	ownerID int primary key,
 	ownerFirstName text,
@@ -34,7 +36,7 @@ create table pets (
 	petType text,
 	foreign key (ownerID) REFERENCES owners(ownerID)
 	);
-	
+```	
 
 8. No, in the example table friends, friendZip, friendCity, and friendState, rely on friendID. One solution would be to create two tables, using the friendZip as a foreign key. 
 

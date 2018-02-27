@@ -1,6 +1,6 @@
-1. **Book: FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY** 
+1. Book: FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY
 
-   Complete Order: FROM, ON, OUTER, WHERE, GROUP BY, CUBE | ROLLUP, HAVING, SELECT, DISTRINCT, ORDER BY, TOP
+   *Complete Order: FROM, ON, OUTER, WHERE, GROUP BY, CUBE | ROLLUP, HAVING, SELECT, DISTRINCT, ORDER BY, TOP*
 
 2. The FROM clause is required in conjunction with select statements. It lists tables and views referenced columns. The from clause can be used in conjuction to join types.   
 
