@@ -15,9 +15,9 @@ using System.Windows.Shapes;
 
 namespace BigMath
 {
-    //Autism
+    
     //check for checkboxes
-    //heron is named after hero look it up
+    //heron is named after hero
     public partial class MainWindow : Window
     {
         public MainWindow()
