@@ -43,7 +43,7 @@ namespace ConsoleApp1
                     Useravg(); //user pre determined # score
                     break;
                 case 4:
-                    UndecidedAvg(); // average undecided # of scores 
+                    // UndecidedAvg(); // average undecided # of scores 
                     break;
                 default:
                     Console.WriteLine("Please make a Selection of 1-4");
@@ -69,17 +69,17 @@ namespace ConsoleApp1
 
         private void Tenscoreavg() //function 2
         {
-            int[] scores = new int[10];
-            int sum = 0;
+               int[] scores = new int[10];
+               int sum = 0;
 
-            for (int i = 0; i < scores.Length; i++)
-            {
-                scores[i] = ReadInt($"Please input score number {i + 1}: "); // add one here instead so the first score is 1
-                sum += scores[i]; //update scores 
-            }
-            int mean = sum / 10;
-            Console.WriteLine($"The Total value of all scores is: {sum}");
-            Console.WriteLine($"The Mean test score is: {mean}");
+               for (int i = 0; i < scores.Length; i++)
+               {
+                   scores[i] = ReadInt($"Please input score number {i + 1}: "); // add one here instead so the first score is 1
+                   sum += scores[i]; //update scores 
+               }
+               int mean = sum / 10;
+               Console.WriteLine($"The Total value of all scores is: {sum}");
+               Console.WriteLine($"The Mean test score is: {mean}");
         }
 
         private void Useravg() //user defined number of tests average [function3]

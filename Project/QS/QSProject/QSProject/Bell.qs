@@ -14,13 +14,14 @@
             }
         }
     }
+	
 	operation BellTest (count : Int, initial: Result) : (Int,Int,Int)
     {
         body
         {
             mutable numOnes = 0;
 			mutable agree = 0;
-            using (qubits = Qubit[2])
+            using (qubits = Qubit[16])
             {
                 for (test in 1..count)
                 {
