@@ -8,6 +8,10 @@ namespace ConsoleApp1
 {
     class Program
     {
+        private static int sum;
+        private static int total;
+        private static int avg;
+
         static void Main(string[] args)
         {
             (new Program()).Handler();
@@ -20,15 +24,20 @@ namespace ConsoleApp1
             string m2 = "2.) Average of ten Score\n";
             string m3 = "3.) Average of user defined number of scores.\n";
             string m4 = "4.) Average number of indeterminate scores.\n";
+            string m5 = "Please choose an option: ";
+
             int caseswitch;
-
-            Console.WriteLine($"{m} {m1} {m2} {m3} {m4}");
-
-            Console.WriteLine("Input Selection:");
+            int isnum;
+            Console.WriteLine($"{m} {m1} {m2} {m3} {m4} {m5}");
             string choice = Console.ReadLine();
+
+            if (!int.TryParse(choice, out isnum))
+            {
+                Console.WriteLine("Input only numbers");
+                Handler();
+            }
+
             caseswitch = int.Parse(choice);
-
-
 
             switch (caseswitch)
             {
@@ -40,13 +49,14 @@ namespace ConsoleApp1
                     // AVG Ten scores
                     break;
                 case 3:
-                    Useravg(); //user pre determined # score
+                    Useravg(); //user pre determined # score 
                     break;
                 case 4:
                     UndecidedAvg(); // average undecided # of scores 
                     break;
                 default:
-                    Console.WriteLine("Please make a Selection of 1-4");
+                    Console.WriteLine("Please make a Selection of 1-4.");
+                    Handler();
                     break;
             }
 
@@ -54,16 +64,36 @@ namespace ConsoleApp1
 
         private int ReadInt(string a) //read intergers
         {
-            Console.Write(a); //need to add bounds checks [1-100]
+            Console.Write(a);
+            int isnum;
             string input1 = Console.ReadLine();
+            int.TryParse(input1, out isnum);
+
+            if (!int.TryParse(input1, out isnum))
+            {
+                Console.WriteLine("Incorrect input format.\n Please try again.");
+                Handler();
+            }
+
+            int bounds = int.Parse(input1);
+
+
+            if (bounds > 100 || bounds < 0)
+            {
+                Console.WriteLine("Please only input numbers between 0 and 100.\n Try Again.");
+                Handler();
+            }
+
             return int.Parse(input1);
+
         }
 
         private void Integersum() // do function 1
         {
-            int a = ReadInt("Please Input your first Number:");
-            int b = ReadInt("Please Input your second number:");
-            Console.WriteLine($"The Sum of your Number is: {a + b}");
+            int a = ReadInt("Please Input your first Number: ");
+            int b = ReadInt("Please Input your second number: ");
+            Console.WriteLine($"The Sum of your Number is: {a + b}!");
+            Handler();
         }
 
 
@@ -80,6 +110,8 @@ namespace ConsoleApp1
             int mean = sum / 10;
             Console.WriteLine($"The Total value of all scores is: {sum}");
             Console.WriteLine($"The Mean test score is: {mean}");
+            char grade = Grade(mean);
+            Console.WriteLine($"The average letter grade is {grade}");
         }
 
         private void Useravg() //user defined number of tests average [function3]
@@ -96,10 +128,50 @@ namespace ConsoleApp1
             int mean = sum / arraylength;
             Console.WriteLine($"The Total value of all scores is: {sum}");
             Console.WriteLine($"The Mean test score is: {mean}");
+            char grade = Grade(mean);
+            Console.WriteLine($"The average letter grade is {grade}");
         }
         //Finish this tomorrow 
-        
-      //  private void UndecidedAvg()
 
-    } 
+        private void UndecidedAvg()
+        {
+            Console.WriteLine("Type Done at any time to return to the main menu.\n");
+            sum += ReadInt("Please input a test score:");
+            total++;
+            avg = sum / total;
+            Console.WriteLine($"Your total is: {sum}.");
+            Console.WriteLine($"Your average is: {avg}.");
+            char grade = Grade(avg);
+            Console.WriteLine($"The average letter grade is {grade}");
+            if (total < 1000) //lazy
+                UndecidedAvg();
+            else
+                return;
+        }
+
+        private char Grade(int score) // grade tests
+        {
+            if (score >= 90)
+            {
+                return 'A';
+            }
+
+            if (score >= 80)
+            {
+                return 'B';
+            }
+
+            if (score >= 70)
+            {
+                return 'C';
+            }
+            
+            if (score >= 60)
+            {
+                return 'D';
+            }
+            return 'F';
+
+        }
+    }
 }
