@@ -1,7 +1,5 @@
 # Homework for C# Chapter 1 
 
-### Ryan Oberlin
-
 1. What is a console app?
 *An application without a GUI*
 
