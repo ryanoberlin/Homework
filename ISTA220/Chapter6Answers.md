@@ -2,18 +2,25 @@
 
 ### Ryan Oberlin
 
-1.) Unexpected event in a program. 
+1. What is an exception?  
+*Unexpected event in a program.*
 
-2.) it attempts to execute all statements
+2. What happens in a try block if the program executes without errors?  
+*it attempts to execute all statements within the try block*
 
-3.) it executes immediately after a block of code that begins with the try statement
+3. How does the catch mechanism work for unhandled exceptions?  
+*it executes immediately after a block of code that begins with the try statement*
 
-4.) the program has an unhandled exception 
+4. What happens in a program if an exception block fails to handle an particular error?  
+*the program has an unhandled exception*
 
-5.) Exception class. It's part of the .NET framework in the mscorblib direct link library.
+5. What is the parent class for all exceptions? How does this work?  
+*Exception class. It's part of the .NET framework in the mscorblib dynamic link library.*
 
-6.) the type of exception that is thrown. 
+6. How do you determine the type of an error?  
+*the type of exception that is thrown.*
 
-7.) checks the data type.
-
-8.) ensure a block of code runs after the exception.
+7. What is the purpose of integer checking?  
+  *To checks the data type.*
+8. What does the finally block do?  
+*ensure a block of code runs after an exception.*

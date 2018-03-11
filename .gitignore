@@ -318,3 +318,8 @@ ASALocalRun/
 
 # MSBuild Binary and Structured Log
 *.binlog
+
+# Jekyll stuff
+_site
+.sass-cache
+.jekyll-metadata
