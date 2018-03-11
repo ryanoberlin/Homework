@@ -1,3 +1,7 @@
+# ISTA420 Chapter 1 SQL Homework
+
+### Ryan Oberlin
+
 1.  Collection of Information Organized into related sets that can be ordered logically and referenced.
 
 2. A collection of data sets relating to human resources.   

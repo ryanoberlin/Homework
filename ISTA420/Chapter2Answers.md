@@ -1,3 +1,7 @@
+# ISTA420 SQL Chapter 2 Homework
+
+### Ryan Oberlin
+
 1. A primary key constraint specifies that a primary key must have a unique non null value. It is equivilent to Unique and Null constraint  
 
 2. It determines if data entered into a column can be null or if it must be non-null. It prevents null data from being entered into a column

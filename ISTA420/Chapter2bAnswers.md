@@ -1,3 +1,7 @@
+# ISTA 420 SQL Chapter 2b Homework
+
+### Ryan Oberlin
+
 1. Book: FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY
 
    *Complete Order: FROM, ON, OUTER, WHERE, GROUP BY, CUBE | ROLLUP, HAVING, SELECT, DISTRINCT, ORDER BY, TOP*
