@@ -21,7 +21,7 @@
         {
             mutable numOnes = 0;
 			mutable agree = 0;
-            using (qubits = Qubit[16])
+            using (qubits = Qubit[2])
             {
                 for (test in 1..count)
                 {
@@ -31,6 +31,11 @@
 					H(qubits[0]);
 					CNOT(qubits[0],qubits[1]);
                     let res = M (qubits[0]);
+
+					if (M(qubits[1]) == res)
+					{
+						set numOnes = numOnes - 1;
+					}
 
 					if (M (qubits[1]) == res)
 					{
@@ -45,7 +50,8 @@
                 }
                 Set(Zero, qubits[0]);
 				Set(Zero, qubits[1]);
-            }
+				
+			}
             // number of |0> & |1>
             return (count-numOnes, numOnes, agree);
         }

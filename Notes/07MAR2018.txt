@@ -1,0 +1,1 @@
+SQL Programming Exercise at the end of chapter 3 in the TSQL book.
