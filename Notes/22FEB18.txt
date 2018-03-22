@@ -1,0 +1,5 @@
+logical description
+C# 11
+SQL 8b
+C# exercise 5
+SQL Ex ??
