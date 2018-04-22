@@ -1,0 +1,1 @@
+Create report that creates a line for each product in an order that shows order id, product id, unit price, quantity sold, line item price and percent of that line item that constitutes the total order sold

@@ -1,4 +1,3 @@
-
 # ISTA420 SQL Chapter 3 Homework
 
 ### Ryan Oberlin

@@ -1,0 +1,6 @@
+logical description
+C# 11, 12
+SQL 8b, 9
+C# #5
+SQL Ex ??
+Q is for quantum by terry rudolph
