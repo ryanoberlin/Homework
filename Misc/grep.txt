@@ -1,0 +1,20 @@
+https://cygwin.com/install.html
+http://gnuwin32.sourceforge.net/packages/grep.htm
+cat book.txt
+grep title book.txt -any instance of titles
+grep "the two queens" book.txt -string littoral
+grep "The Two Queens" book.txt -case sensitive
+grep -i "the two queens" book.txt -case insensitive
+grep -A 10 -i "the two queens" book.txt -ten lines after
+grep -B 10 -i "The two queens" book.txt -ten lines before
+grep his book.txt -looks for any instance of his
+grep -iw "his" book.txt -exact word
+grep -v -e "the" book.txt -exclude
+grep -c "Beowulf" book.txt -count lines with the word
+grep -v -c "Beowulf" book.txt -count lines without
+grep -R "bin" /usr/
+grep -n "Beowulf" book.txt
+grep "Beowulf$" book.txt
+grep --color Beowulf book.txt
+grep -i "king.*beowulf" book.txt
+grep -i "beowulf.*king" book.txt
